@@ -1,1 +1,1 @@
-# myconfig
+# DOTFILES
