@@ -37,6 +37,7 @@ set background=dark
 colorscheme palenight
 set tabstop=2
 set nu
+set relativenumber
 set t_Co=256
 set laststatus=2
 set backspace=indent,eol,start
@@ -92,7 +93,7 @@ let g:airline_left_sep = ''
 let g:airline#extensions#tabline#left_sep = ''
 let g:airline_powerline_fonts = 1
 
-set guifont=DroidSansMonoforPowerlineNerdFontComplete\ 12
+set guifont=DroidSansMono\ Nerd\ Font\ 12
 
 " jedi
 set completeopt-=preview
