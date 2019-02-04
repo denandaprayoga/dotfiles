@@ -1,0 +1,92 @@
+!*background: #141C2B
+!*foreground: #D8DBE1
+
+URxvt.font: xft:hack:size=13
+
+! black
+*color0:        #1E1E1E
+*color8:        #848484
+
+! red
+*.color1:	#D86363
+*.color9:	#E9A9A9
+
+! green
+*.color2:	#94daa9
+*.color10:	#bae8d2
+
+! yellow
+*.color3:	#F9F763
+*.color11:	#BCB000
+
+! blue
+*.color4:	#9cdbdf
+*.color12:	#6cb4dd
+
+! magenta
+*.color5:	#cca8c9
+*.color13:	#db79bf
+
+! cyan
+*.color6:	#9ad4c8
+*.color14:	#59b0b2
+
+! white
+*.color7:	#e1e1e1
+*.color15:	#f0f0f0
+
+URxvt.perl-ext-common:			default,matcher,tabbedex,vtwheel,clipboard
+!URxvt.matcher.button:			1
+URxvt.perl-ext:				default,url-select
+URxvt.keysym.M-u:			perl:url-select:select_next
+URxvt.url-select.launcher:		chromium
+URxvt.url-select.underline:		true
+URxvt.insecure: 			false
+URxvt.keysym.Shift-Control-C: 			perl:clipboard:copy
+URxvt.keysym.Shift-Control-V: 			perl:clipboard:paste
+!URxvt.keysym.M-c: perl:clipboard:copy
+!URxvt.keysym.M-v: perl:clipboard:paste
+URxvt*saveLines: 			300000
+URxvt.scrollBar: 			false
+URxvt*cursorBlink: 			true
+URxvt*cursorUnderline: 		        false
+URxvt.tabbedex.autohide:		yes
+URxvt.tabbedex.tabbar-fg:		2
+URxvt.tabbedex.tabbar-bg:		0
+URxvt.tabbedex.tab-fg:			10
+URxvt.tabbedex.tab-bg:			0
+URxvt.tabbedex.title:			yes
+URxvt.tabbedex.new-button:		no
+URxvt*geometry: 82x11
+URxvt.internalBorder: 30
+
+
+rofi.modi:                           drun,window,ssh,run
+rofi.sidebar-mode:                   true
+rofi.terminal:                       urxvt
+rofi.ssh-client:                     ssh
+rofi.ssh-command:                    {terminal} -e "{ssh-client} {host}"
+rofi.opacity:                        100
+rofi.width:                          80
+rofi.lines:                          10
+rofi.columns:                        4
+rofi.font:                           hack 12
+rofi.bw:                             10
+rofi.location:                       0
+rofi.padding:                        30
+rofi.levenshtein-sort:               true
+rofi.case-sensitive:                 false
+rofi.fuzzy:                          false
+rofi.line-margin:                    10
+rofi.separator-style:                solid
+rofi.hide-scrollbar:                 true
+rofi.markup-rows:                    false
+rofi.scrollbar-width: 0
+rofi.color-enabled: true
+! State:           ´bg´,     ´fg´,     ´bgalt´,  ´hlbg´,   ´hlfg´
+rofi.color-normal: #2f343f,  #e7e8eb,  #2f343f,  #e7e8eb,  #2f343f
+rofi.color-urgent: #2f343f,  #e7e8eb,  #2f343f,  #e7e8eb,  #2f343f
+rofi.color-active: #2f343f,  #e7e8eb,  #2f343f,  #e7e8eb,  #2f343f
+!                  ´background´, ´border´
+rofi.color-window: #2f343f,      #75444A57
+
