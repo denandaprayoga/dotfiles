@@ -1,7 +1,7 @@
-!*background: #141C2B
-!*foreground: #D8DBE1
+*background: #141C2B
+*foreground: #D8DBE1
 
-URxvt.font: xft:hack:size=13
+URxvt*font: xft:Inconsolata Nerd Font Mono:pixelsize=23:minspace=False, xft:DejaVu Sans:pixelsize=18
 
 ! black
 *color0:        #1E1E1E
