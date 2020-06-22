@@ -55,6 +55,12 @@ filetype plugin on
 set omnifunc=syntaxcomplete#Complete
 let g:xptemplate_brace_complete = '([{'
 
+" Leader + C to copy the visual selection to the system clipboard
+vnoremap <Leader>c "+y
+
+" Leader + V to paste the content of the system clipboard
+nnoremap <Leader>p "+p
+
 "go config
 let g:go_fmt_command = "goimports"    " Run goimports along gofmt on each save     
 let g:go_auto_type_info = 1           " Automatically get signature/type info for object under cursor
