@@ -23,6 +23,8 @@ Plugin 'Yggdroot/indentLine'
 Plugin 'fatih/vim-go'
 Plugin 'shougo/deoplete.nvim'
 Plugin 'jiangmiao/auto-pairs'
+Plugin 'marijnh/tern_for_vim'
+
 " add all your plugins here (note older versions of Vundle
 " used Bundle instead of Plugin)
 
@@ -49,7 +51,8 @@ syntax on
 set showcmd             " show command in bottom bar
 filetype indent on      " load filetype-specific indent files
 set showmatch           " highlight matching [{()}]
-
+filetype plugin on
+set omnifunc=syntaxcomplete#Complete
 let g:xptemplate_brace_complete = '([{'
 
 "go config
