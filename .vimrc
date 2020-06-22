@@ -51,8 +51,7 @@ syntax on
 set showcmd             " show command in bottom bar
 filetype indent on      " load filetype-specific indent files
 set showmatch           " highlight matching [{()}]
-filetype plugin on
-set omnifunc=syntaxcomplete#Complete
+
 let g:xptemplate_brace_complete = '([{'
 
 " Leader + C to copy the visual selection to the system clipboard
