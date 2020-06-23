@@ -121,8 +121,6 @@ let g:airline_left_sep = ''
 let g:airline#extensions#tabline#left_sep = ''
 let g:airline_powerline_fonts = 1
 
-set guifont=DroidSansMono\ Nerd\ Font\ 12
-
 " palenight
 if (has("termguicolors"))
  set termguicolors
