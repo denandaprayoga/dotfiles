@@ -38,7 +38,12 @@ filetype plugin indent on    " required
 syntax on
 set background=dark
 " colorscheme palenight
-set tabstop=2
+set expandtab       "Use softtabstop spaces instead of tab characters for indentation
+set shiftwidth=4    "Indent by 4 spaces when using >>, <<, == etc.
+set softtabstop=4   "Indent by 4 spaces when pressing <TAB>
+set autoindent      "Keep indentation from previous line
+set smartindent     "Automatically inserts indentation in some cases
+set cindent         "Like smartindent, but stricter and more customisable
 set nu
 set relativenumber
 set t_Co=256
