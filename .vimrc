@@ -54,6 +54,9 @@ set showmatch           " highlight matching [{()}]
 
 let g:xptemplate_brace_complete = '([{'
 
+" buffers
+nnoremap <Tab> :buffers<CR>:buffer<Space>
+
 " Leader + C to copy the visual selection to the system clipboard
 vnoremap <Leader>c "+y
 
