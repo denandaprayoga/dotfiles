@@ -28,7 +28,10 @@ call plug#end()
 " konfigurasi workspace vim
 syntax on
 set background=dark
-colorscheme dracula
+
+" konfigurasi workspace vim
+syntax on
+set background=dark
 set nu
 set relativenumber
 set t_Co=256
