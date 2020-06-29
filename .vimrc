@@ -72,6 +72,9 @@ set cindent         "Like smartindent, but stricter and more customisable
 " set mouse
 set mouse=a
 
+" replace Esc with Caps lock
+au VimEnter * silent! !xmodmap -e 'clear Lock' -e 'keycode 0x42 = Escape'
+
 " buffers
 nnoremap <Tab> :buffers<CR>:buffer<Space>
 
