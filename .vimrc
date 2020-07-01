@@ -29,6 +29,9 @@ Plug 'mattn/emmet-vim'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 
+" comment
+Plug 'preservim/nerdcommenter'
+
 " List ends here. Plugins become visible to Vim after this call.
 call plug#end()
 
@@ -142,3 +145,6 @@ inoremap <A-j> <Esc>:m .+1<CR>==gi
 inoremap <A-k> <Esc>:m .-2<CR>==gi
 vnoremap <A-j> :m '>+1<CR>gv=gv
 vnoremap <A-k> :m '<-2<CR>gv=gv
+
+" Add spaces after comment delimiters by default
+let g:NERDSpaceDelims = 1
