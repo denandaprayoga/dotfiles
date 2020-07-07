@@ -32,6 +32,11 @@ Plug 'junegunn/fzf.vim'
 " comment
 Plug 'preservim/nerdcommenter'
 
+" Js formatter
+Plug 'prettier/vim-prettier', {
+  \ 'do': 'yarn install',
+  \ 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue', 'yaml', 'html'] }
+
 " List ends here. Plugins become visible to Vim after this call.
 call plug#end()
 
@@ -148,3 +153,7 @@ vnoremap <A-k> :m '<-2<CR>gv=gv
 
 " Add spaces after comment delimiters by default
 let g:NERDSpaceDelims = 1
+
+" Prettier
+let g:prettier#autoformat = 1
+autocmd TextChanged,InsertLeave *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md,*.vue,*.yaml,*.html PrettierAsync
