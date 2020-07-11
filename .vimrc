@@ -155,5 +155,5 @@ vnoremap <A-k> :m '<-2<CR>gv=gv
 let g:NERDSpaceDelims = 1
 
 " Prettier
-let g:prettier#autoformat = 1
-autocmd TextChanged,InsertLeave *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md,*.vue,*.yaml,*.html PrettierAsync
+let g:prettier#autoformat = 0
+autocmd BufWritePre *.js,*.json,*.css,*.scss,*.less,*.graphql PrettierAsync
